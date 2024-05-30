@@ -1,0 +1,19 @@
+.outer{
+  .inner{
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    border: 1px solid red;
+    padding: 30px;
+    color: #F8F9FA;
+    h1{
+      color: #F25C05;
+    }
+    .second{
+
+    }
+  }
+}

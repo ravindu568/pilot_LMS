@@ -1,0 +1,44 @@
+<div class="outer">
+  <div class="inner">
+    <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+      <mat-toolbar color="primary" class="example-toolbar" style="display: flex;align-items: center;justify-content: space-between">
+        <div class="first-content" style="display: flex;align-items: center">
+          <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+          <label style="display: flex;align-items: center;font-weight: lighter">
+            <mat-icon aria-hidden="false" aria-label="Example phone icon" fontIcon="phone" style="margin-right:8px "></mat-icon>
+            Call us : 041 2222681
+          </label>
+          <label style="display: flex;align-items: center;font-weight: lighter">
+            <mat-icon aria-hidden="false" aria-label="Example mail icon" fontIcon="mail" style="margin-right:8px;margin-left: 8px "></mat-icon>
+            E-mail : Indeewarakck.com
+          </label>
+        </div>
+        <div class="second-content">
+          <h1 class="example-app-name">Responsive App</h1>
+        </div>
+
+      </mat-toolbar>
+
+      <mat-sidenav-container class="example-sidenav-container"
+                             [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                     [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" style="width: 250px" >
+          <mat-nav-list>
+            @for (nav of fillerNav; track nav) {
+              <a mat-list-item routerLink=".">{{nav}}</a>
+            }
+          </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content style="background-color: #F8F9FA">
+          <!--      @for (content of fillerContent; track content) {-->
+          <!--        <p>{{content}}</p>-->
+          <!--      }-->
+          <router-outlet></router-outlet>
+
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.outer{
+  width: 100vw;
+  height: 100vh;
+
+  .inner{
+
+    .hero-sec{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+
+      .left-side{
+        .course-sec{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          margin: 20px;
+          .course-head{
+            background: #ffffff;
+            flex:1;
+            width: 100%;
+            height: auto;
+          }
+          .course-body{
+            flex:10;
+            width: inherit;
+            border: 1px solid red;
+          }
+
+        }
+
+      }
+      .right-side{
+
+      }
+    }
+  }
+}
