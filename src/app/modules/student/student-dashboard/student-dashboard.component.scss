@@ -41,9 +41,18 @@
             width: 100%;
             border: 1px solid #D0D1C9;
             background-color: #F9F9F9;
-              mat-tab-group{
+            .button-sec{
+              display: flex;
+              align-items: center;
+              background-color: #ffffff;
+              .btn{
+                padding: 8px;
+                background-color: #F25C05;
+                border: none;
+                margin:9px;
 
               }
+            }
           }
 
         }

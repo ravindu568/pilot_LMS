@@ -1,18 +1,16 @@
 <div class="box">
-  <h1 class="program-name">
-    {{name}}
-  </h1>
-  <h3 class="cost">25000 LKR</h3>
-
-  <span class="start-date">{{date | date:'MMMM d, y'}}</span>
-
-
-  <div class="lang-outer">
-    <div class="lang">Java</div>
-    <div class="lang">Java Script</div>
-    <div class="lang">Php</div>
-    <div class="lang">C++/C#</div>
-    <div class="lang">Ruby</div>
+  <div class="upper">
+    <img src="https://static.vecteezy.com/system/resources/previews/007/685/830/non_2x/colorful-geometric-background-trendy-gradient-shapes-composition-cool-background-design-for-posters-free-vector.jpg" alt="normal img">
   </div>
-
+  <div class="bottom">
+    <a routerLink="course-content">
+      <h1 class="program-name">
+        {{name}}
+      </h1>
+    </a>
+    <p>Semester 1</p>
+    <h3 class="en_date">
+    {{date | date:'MMMM d, y'}}
+  </h3>
+  </div>
 </div>

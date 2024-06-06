@@ -6,56 +6,23 @@
           <div class="course-head">
             <label>Course Overview</label>
           </div>
-          <div class="course-body">
-            <mat-tab-group >
-              <mat-tab label="Registered Courses" >
-                  <div class="container" style="width: 100%;height: 500px;margin: 10px">
-                    <div class="row">
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget [name]="'Computer Science'"></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
-                      <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">
-                        <app-registered-programm-widget></app-registered-programm-widget>
-                      </div>
+          <div class="course-body" style="display: flex;flex-direction: column">
+            <div class="button-sec" style="width: 100%;height: auto;">
+              <button type="button" class="btn btn-primary btn-sm" routerLink="register-courses">Registered Courses</button>
+              <button type="button" class="btn btn-primary btn-sm" routerLink="new-courses">New Courses</button>
 
+            </div>
+            <div class="container-fluid h-100" style= "border: 1px solid red;">
+              <div class="row d-flex flex-inline-block h-100" style="border: 1px solid green">
+                <router-outlet></router-outlet>
+              </div>
 
-
-                    </div>
-                  </div>
-              </mat-tab>
-              <mat-tab label="New Courses">
-
-              </mat-tab>
-
-            </mat-tab-group>
+            </div>
           </div>
 
         </div>
       </div>
-      <div class="right-side">
 
-      </div>
 
 
 
@@ -63,3 +30,17 @@
     <app-footer></app-footer>
   </div>
 </div>
+
+
+<!--<div class="container" style="width: 100%;height: 500px;margin: 10px">-->
+<!--  <div class="row">-->
+<!--    <div class="col-12 col-sm-6 col-md-4 col-lg-3 inner">-->
+<!--      <app-registered-programm-widget [name]="'Computer Science'"></app-registered-programm-widget>-->
+<!--    </div>-->
+
+
+
+
+
+<!--  </div>-->
+<!--</div>-->

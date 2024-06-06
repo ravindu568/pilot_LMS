@@ -5,6 +5,8 @@ import {
   RegisteredProgrammWidgetComponent
 } from "../widgets/registered-programm-widget/registered-programm-widget.component";
 import {NewProgrammeWidgetComponent} from "../widgets/new-programme-widget/new-programme-widget.component";
+import {RouterLink, RouterOutlet} from "@angular/router";
+import {NbButtonModule} from "@nebular/theme";
 
 @Component({
   selector: 'app-student-dashboard',
@@ -14,7 +16,10 @@ import {NewProgrammeWidgetComponent} from "../widgets/new-programme-widget/new-p
     MatTabGroup,
     MatTab,
     RegisteredProgrammWidgetComponent,
-    NewProgrammeWidgetComponent
+    NewProgrammeWidgetComponent,
+    RouterLink,
+    NbButtonModule,
+    RouterOutlet
   ],
   templateUrl: './student-dashboard.component.html',
   styleUrl: './student-dashboard.component.scss'

@@ -4,31 +4,31 @@
   padding: 10px;
   background-color: #ecf0f1;
   margin: 20px;
+  display:flex;
+  flex-direction: column;
+  border: 1px solid #D0D1C9;
+
+  .upper{
+    flex: 1;
+img{
+  width: 100%;
+  height:100px;
 }
-.program-name{
-  font-family: "Play", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  margin: 0;
+  }
+  .bottom{
+    flex: 1;
+    a{
+      text-decoration: none;
+      color: black;
+      .program-name{
+        font-family: "Play", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 0;
+      }
+    }
+
+  }
 }
-.cost{
-  color: #c0392b;
-  margin-top: 5px;
-}
-.start-date{
-  padding: 8px 15px;
-  color: white;
-  background-color: #d35400;
-  border-radius: 100px;
-}
-.lang-outer{
-  margin-top: 35px;
-}
-.lang{
-  background-color: #16a085;
-  color: white;
-  padding: 12px 20px;
-  display: inline-block;
-  margin-right: 15px;
-  margin-top: 15px;
-}
+
+

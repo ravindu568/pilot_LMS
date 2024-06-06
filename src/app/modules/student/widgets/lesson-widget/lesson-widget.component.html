@@ -1,0 +1,54 @@
+<!--<div class="accordion accordion-flush w-75" id="accordionFlushExample">-->
+<!--  <div class="accordion-item">-->
+<!--    @for (nav of fillerNav; track nav) {-->
+<!--      <h2 class="accordion-header">-->
+
+<!--        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">-->
+<!--        {{nav}}-->
+<!--        </button>-->
+
+<!--    </h2>-->
+<!--    }-->
+<!--    @for(content of fillerContent;track content){-->
+
+<!--        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">-->
+<!--      <div class="accordion-body">{{content}}</div>-->
+<!--    </div>-->
+<!--    }-->
+<!--      </div>-->
+
+
+
+<!--</div>-->
+
+
+<cdk-accordion class="example-accordion">
+  @for (item of items; track item; let index = $index) {
+    <cdk-accordion-item
+
+      #accordionItem="cdkAccordionItem"
+      class="example-accordion-item"
+      role="button"
+      tabindex="0"
+      [attr.id]="'accordion-header-' + index"
+      [attr.aria-expanded]="accordionItem.expanded"
+      [attr.aria-controls]="'accordion-body-' + index">
+      <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+        {{ item }}
+        <span class="example-accordion-item-description">
+          Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+        </span>
+      </div>
+      <div
+        class="example-accordion-item-body"
+        role="region"
+        [style.display]="accordionItem.expanded ? '' : 'none'"
+        [attr.id]="'accordion-body-' + index"
+        [attr.aria-labelledby]="'accordion-header-' + index">
+        hello hi kohomada{{item}}
+      </div>
+    </cdk-accordion-item>
+  }
+</cdk-accordion>
+
+
